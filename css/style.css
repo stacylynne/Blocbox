@@ -43,30 +43,38 @@ html, body{
   margin:0 2% 20px;
 }
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .one-half {
-    width: 46%;
-  }
-  .one-third {
-    width: 29.33333%
-  }
-  .one-fourth {
-    width: 21%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
+   .container {
+     width: 750px;
+   }
+   .hero {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .hero {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+   .hero {
+     width: 1170px;
+   }
+ }
 /* HEADER */
 
 header{
@@ -88,7 +96,7 @@ header nav ul {
 header nav ul > li {
   list-style-type:none;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 .937em;
 }
 header nav ul > li.btn-outline {
   padding:10px 15px;
@@ -111,19 +119,21 @@ header .hero {
   position:relative;
 }
 header .hero h1 {
-  font-size:48px;
+  font-size:3em;
   font-weight:normal;
-  margin:95px 0 0;
+  margin:1.5em 0 0;
 }
 header .hero p {
-  font-size: 22px;
-  line-height:26px;
+  font-size: 1.375em;
+  line-height:1.625em;
   font-weight:100;
-  margin:10px 0 40px;
+  margin:0.625em 0 2.5em;
 }
 header .hero img {
   display: block;
   margin:3em auto 0;
+  width: 75%;
+  height: auto;
 }
 
 /*BUTTONS*/
