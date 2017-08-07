@@ -136,6 +136,7 @@ header .hero img {
   width: 75%;
   height: auto;
 }
+/* FOR REPSONSIVE NAV */
 @media (max-width: 992px) {
   header nav ul {
     position: absolute;
@@ -361,4 +362,19 @@ color:#FFFFFF
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
+}
+
+/* DASHBOARD CONTENT - TILES - MY ATTEMPT AT STYLING */
+
+.content-item {
+  float: right;
+}
+
+.item-box {
+  background-color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  padding:10px;
+  width:274px;
+  height:250px;
 }
