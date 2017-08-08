@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/dropit.css">
 </head>
 <body class="dashboard">
+    <!--RESPONSIVE NAV-->
+    <a href="#" class="hamburger" id="menu">&#9776;</a>
     <!--LEFT NAV-->
     <nav id="left-nav" class="left-nav">
         <a href="#" class="site-logo"><img src="images/site-logo.png" alt="blocbox" /></a>
@@ -39,8 +42,8 @@
     </div>
     </nav>
 
-    <main role="main">
-      <!--CONTENT-
+  <!--CONTENT-
+  <main role="main">
       <section class="content">
           <div class="container">
             <div class="header">
@@ -116,15 +119,22 @@
           </div>
       </section>
     </main> -->
-
-
   <main role="main">
-   <!-- CONTENT -->
+  <!-- CONTENT -->
    <section class="content">
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
+         <ul class="menu">
+           <li>
+             <a href="#" class="btn">+ Add</a>
+             <ul>
+               <li><a href="#"><i class="fa fa-file-o"></i>  Note</a></li>
+               <li><a href="#"><i class="fa fa-file-o"></i>  Image</a></li>
+               <li><a href="#"><i class="fa fa-file-o"></i>  Link</a></li>
+             </ul>
+           </li>
+         </ul>
        </div>
      </div>
      <div class="container">
@@ -148,7 +158,7 @@
        </div>
        <div class="content-item">
          <div class="item-box">
-           <img src="http://41.media.tumblr.com/90ef0b4692e0ba4df321674c3572e5ba/tumblr_ndyve8fmFa1tubinno1_r1_1280.jpg">
+           <img src="images/bar.png" alt="bar">
          </div>
        </div>
        <div class="content-item">
@@ -159,7 +169,7 @@
        </div>
        <div class="content-item">
          <div class="item-box">
-           <img src="http://41.media.tumblr.com/0390d80d6c8cc4a7096033182a4bfe8a/tumblr_ndyvukSjNl1tubinno1_1280.jpg">
+           <img src="images/bar.png" alt="bar">
          </div>
        </div>
        <div class="content-item">
@@ -176,7 +186,7 @@
        </div>
        <div class="content-item">
          <div class="item-box">
-           <img src="http://41.media.tumblr.com/fddb3f2b0bdf390efd7ea87372e75fa5/tumblr_ndyg3pYbKW1tubinno1_1280.jpg">
+           <img src="images/bar.png" alt="bar">
          </div>
        </div>
        <div class="content-item">
@@ -188,6 +198,14 @@
      </div>
    </section>
  </main>
+ <script src="js/jquery-3.2.1.min.js"></script>
+ <script src="js/dropit.js"></script>
+ <script type="text/javascript">
+     $(".menu").dropit();
+     $("#menu").click(function(){
+       $("#left-nav").toggleClass("open", 200);
 
+     });
+   </script>
 </body>
 </html>
